@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#09090d">
+<meta name="description" content="Sneha — computer science student, developer and curious builder. Explore projects, skills and learning journey.">
+<title>Sneha — Digital Playground</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#09090d;--panel:#111119;--line:#282833;--text:#f4f1ff;--muted:#a5a0b5;--purple:#a78bfa;--pink:#ff72c6;--lime:#d5ff70;--mono:"DM Mono",monospace;--sans:"Space Grotesk",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 80% 10%,#5b36a51c,transparent 35%),radial-gradient(ellipse at 10% 55%,#e94e9b10,transparent 30%),linear-gradient(#ffffff05 1px,transparent 1px),linear-gradient(90deg,#ffffff05 1px,transparent 1px);background-size:auto,auto,48px 48px,48px 48px}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 44px));margin:auto}.mono{font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase;font-size:11px;color:var(--muted)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-weight:700;font-size:19px;letter-spacing:-.06em}.brand span{color:var(--purple)}.navlinks{display:flex;gap:27px;align-items:center;font-size:13px;color:var(--muted)}.navlinks a:hover{color:white}.nav-cta{border:1px solid #5e4d83;padding:10px 15px;border-radius:4px;color:var(--text)}
+.hero{min-height:690px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:35px;padding:70px 0 90px}.eyebrow{display:flex;align-items:center;gap:10px;color:var(--lime)}.dot{width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 14px var(--lime)}h1{font-size:clamp(64px,10vw,124px);line-height:.84;letter-spacing:-.095em;margin:27px 0 25px;font-weight:700}h1 .stroke{color:transparent;-webkit-text-stroke:1.5px var(--purple)}h1 .accent{color:var(--purple)}.hero-copy{font-size:17px;line-height:1.7;color:var(--muted);max-width:540px}.hero-actions{display:flex;gap:13px;margin-top:31px;flex-wrap:wrap}.btn{padding:14px 18px;border:1px solid var(--line);font-size:13px;font-weight:600;transition:.2s;display:inline-flex;gap:10px;align-items:center}.btn.primary{background:var(--purple);color:#100d18;border-color:var(--purple)}.btn:hover{transform:translateY(-3px);border-color:var(--purple)}.hero-art{position:relative;min-height:400px;display:grid;place-items:center}.orbit{width:min(350px,75vw);aspect-ratio:1;border:1px solid #6f56a866;border-radius:50%;position:relative;display:grid;place-items:center;animation:spin 28s linear infinite}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #6f56a844;border-radius:50%;inset:35px}.orbit:after{inset:75px;border-color:#ff72c655}.core{width:135px;height:135px;border-radius:30px;display:grid;place-items:center;background:linear-gradient(145deg,#b9a0ff,#6c4ac4);box-shadow:0 0 90px #9d7aff55;font-size:55px;transform:rotate(-12deg);animation:float 4s ease-in-out infinite}.sat{position:absolute;background:#171520;border:1px solid #55466e;padding:11px 13px;font:11px var(--mono);color:var(--lime);animation:float 5s ease-in-out infinite}.sat.one{top:12%;left:0}.sat.two{right:-3%;top:32%;color:var(--pink);animation-delay:-2s}.sat.three{bottom:10%;left:12%;animation-delay:-1s}@keyframes spin{to{transform:rotate(360deg)}}@keyframes float{50%{translate:0 -12px}}
+.ticker{border-block:1px solid var(--line);overflow:hidden;padding:17px 0;color:var(--muted);font:11px var(--mono);white-space:nowrap}.ticker-track{display:flex;gap:38px;width:max-content;animation:marquee 26s linear infinite}.ticker b{color:var(--purple);font-weight:400}@keyframes marquee{to{transform:translateX(-50%)}}
+section{padding:105px 0}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:38px;gap:20px}.section-head h2{font-size:clamp(38px,6vw,66px);letter-spacing:-.075em;line-height:.95;margin:12px 0 0}.section-head p{max-width:350px;color:var(--muted);font-size:14px;line-height:1.7}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.about-card,.project,.skill-panel,.timeline-card{background:linear-gradient(145deg,#171620,#101016);border:1px solid var(--line);padding:28px;position:relative;overflow:hidden}.about-card.big{min-height:260px}.about-card h3{font-size:26px;letter-spacing:-.05em;margin:15px 0}.about-card p{color:var(--muted);font-size:14px;line-height:1.8;margin:0}.number{font:11px var(--mono);color:var(--purple)}.about-card.quote{display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(135deg,#261a3b,#15121d)}.quote-mark{font-size:70px;color:var(--pink);line-height:.7}.quote-text{font-size:25px;line-height:1.25;letter-spacing:-.05em;max-width:400px}.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.project{min-height:300px;display:flex;flex-direction:column;transition:.25s}.project:hover{transform:translateY(-6px);border-color:#8064bb}.project-top{display:flex;justify-content:space-between;align-items:center}.project-icon{width:47px;height:47px;display:grid;place-items:center;background:#252035;border:1px solid #4d3d6c;font-size:22px}.project h3{font-size:27px;letter-spacing:-.06em;margin:27px 0 10px}.project p{color:var(--muted);font-size:14px;line-height:1.7;margin:0;max-width:470px}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:20px}.tag{font:10px var(--mono);padding:7px 9px;border:1px solid var(--line);color:#c7bfd9}.project-foot{margin-top:auto;padding-top:24px;display:flex;justify-content:space-between;align-items:center;color:var(--purple);font:11px var(--mono)}.project-foot a:hover{color:var(--pink)}.status{color:var(--lime)}
+.skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.skill-panel h3{font-size:22px;letter-spacing:-.05em;margin:0 0 22px}.skill-cloud{display:flex;flex-wrap:wrap;gap:9px}.skill{padding:11px 13px;border:1px solid var(--line);font-size:13px;color:#ded8ed}.skill:nth-child(3n){border-color:#55447a;color:#c8b4ff}.skill-note{margin-top:20px;color:var(--muted);font-size:12px;line-height:1.6}
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.timeline-card{min-height:190px}.timeline-card .year{font:11px var(--mono);color:var(--pink)}.timeline-card h3{font-size:21px;margin:18px 0 9px;letter-spacing:-.05em}.timeline-card p{font-size:13px;color:var(--muted);line-height:1.7;margin:0}
+.contact{padding:75px 0 95px}.contact-box{border:1px solid #58477b;background:radial-gradient(ellipse at 80% 0%,#a78bfa22,transparent 45%),#12111a;padding:clamp(30px,7vw,75px);position:relative;overflow:hidden}.contact-box h2{font-size:clamp(48px,8vw,90px);line-height:.9;letter-spacing:-.08em;margin:18px 0}.contact-box p{color:var(--muted);max-width:480px;line-height:1.7}.contact-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.footer{border-top:1px solid var(--line);padding:25px 0;display:flex;justify-content:space-between;gap:15px;color:var(--muted);font:10px var(--mono);text-transform:uppercase;letter-spacing:.06em}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}.cursor-glow{position:fixed;width:260px;height:260px;border-radius:50%;background:#9d7aff0b;pointer-events:none;translate:-50% -50%;z-index:-1}
+@media(max-width:760px){.navlinks{gap:13px}.navlinks a:not(.nav-cta){display:none}.hero{grid-template-columns:1fr;padding:75px 0 55px;min-height:auto}.hero-art{min-height:320px}.about-grid,.projects,.skills-grid{grid-template-columns:1fr}.timeline{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:17px}.footer{flex-direction:column}.orbit{width:280px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="cursor-glow" id="glow"></div>
+<div class="wrap">
+<header class="nav">
+<a class="brand" href="#">SNEHA<span>_</span></a>
+<nav class="navlinks" aria-label="Main navigation"><a href="#about">About</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#journey">Journey</a><a class="nav-cta" href="#contact">Let's talk ↗</a></nav>
+</header>
+<main>
+<section class="hero">
+<div>
+<div class="eyebrow mono"><span class="dot"></span> COMPUTER SCIENCE STUDENT · BUILDER IN PROGRESS</div>
+<h1>THINK.<br><span class="stroke">BUILD.</span><br><span class="accent">REPEAT.</span></h1>
+<p class="hero-copy">Hey, I'm Sneha. I turn curiosity into code, ideas into experiments, and coffee-fuelled questions into things that actually work. Welcome to my little corner of the internet.</p>
+<div class="hero-actions"><a class="btn primary" href="#work">EXPLORE MY WORK ↘</a><a class="btn" href="https://github.com/snehamarker" target="_blank" rel="noreferrer">GITHUB PROFILE ↗</a></div>
+</div>
+<div class="hero-art" aria-label="Abstract orbit illustration">
+<div class="orbit"><div class="core">✳</div><div class="sat one">IDEAS.exe</div><div class="sat two">0101 / CREATE</div><div class="sat three">STAY CURIOUS ↗</div></div>
+</div>
+</section>
+</main>
+</div>
+<div class="ticker"><div class="ticker-track"><span>✳ <b>PYTHON</b></span><span>✳ CREATIVE PROBLEM SOLVING</span><span>✳ <b>AI & NLP</b></span><span>✳ FRONTEND EXPERIMENTS</span><span>✳ <b>JAVA</b></span><span>✳ ALWAYS LEARNING</span><span>✳ <b>PYTHON</b></span><span>✳ CREATIVE PROBLEM SOLVING</span><span>✳ <b>AI & NLP</b></span><span>✳ FRONTEND EXPERIMENTS</span><span>✳ <b>JAVA</b></span><span>✳ ALWAYS LEARNING</span></div></div>
+<div class="wrap">
+<section id="about" class="reveal">
+<div class="section-head"><div><div class="mono">01 / THE HUMAN BEHIND THE SCREEN</div><h2>A LITTLE<br>ABOUT ME.</h2></div><p>Curious by default. Learning by building. Interested in the space where technology meets thoughtful design.</p></div>
+<div class="about-grid">
+<article class="about-card big"><div class="number">01 — WHO AM I?</div><h3>Student by schedule.<br>Builder by curiosity.</h3><p>I'm a Computer Science student exploring software development, Python, AI and web technologies. I enjoy breaking big ideas into small steps and learning by making real projects.</p></article>
+<article class="about-card quote"><div class="quote-mark">“</div><div class="quote-text">I don't need to know everything to start. I just need to start learning.</div><div class="mono">CURRENT OPERATING PHILOSOPHY</div></article>
+</div>
+</section>
+<section id="work" class="reveal">
+<div class="section-head"><div><div class="mono">02 / SELECTED EXPERIMENTS</div><h2>THINGS I'VE<br>BEEN BUILDING.</h2></div><p>A few projects from my learning journey — practical experiments, not just pretty screenshots.</p></div>
+<div class="projects">
+<article class="project"><div class="project-top"><div class="project-icon">▦</div><span class="mono">01 / ANALYTICS</span></div><h3>Student Performance Analytics</h3><p>A dashboard concept for exploring student performance and attendance data, with an at-risk overview to make patterns easier to understand.</p><div class="tags"><span class="tag">Python</span><span class="tag">Data Analysis</span><span class="tag">Dashboard UI</span></div><div class="project-foot"><span>ACADEMIC PROJECT</span><a href="https://github.com/snehamarker/Student-Performance-Analytics-System" target="_blank" rel="noreferrer">VIEW REPOSITORY ↗</a></div></article>
+<article class="project"><div class="project-top"><div class="project-icon">⌘</div><span class="mono">02 / AI + NLP</span></div><h3>ConceptGraph AI</h3><p>An AI/NLP project concept designed to extract ideas from documents and connect related concepts in an explorable knowledge graph.</p><div class="tags"><span class="tag">Python</span><span class="tag">spaCy</span><span class="tag">NetworkX</span><span class="tag">PyMuPDF</span></div><div class="project-foot"><span class="status">IN DEVELOPMENT</span><span>EXPLORING ↗</span></div></article>
+<article class="project"><div class="project-top"><div class="project-icon">✳</div><span class="mono">03 / WEB</span></div><h3>Personal Portfolio</h3><p>A front-end project built to practise structuring a responsive personal website using core web technologies.</p><div class="tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Responsive Design</span></div><div class="project-foot"><span>WEB DEVELOPMENT</span><a href="https://github.com/snehamarker/SNEHA-PORTFOLIO" target="_blank" rel="noreferrer">VIEW REPOSITORY ↗</a></div></article>
+<article class="project"><div class="project-top"><div class="project-icon">↗</div><span class="mono">04 / NEXT UP</span></div><h3>More ideas loading...</h3><p>This space is reserved for the next experiment. The goal: keep building, keep documenting, and keep getting better.</p><div class="tags"><span class="tag">Curiosity</span><span class="tag">Consistency</span><span class="tag">Learning</span></div><div class="project-foot"><span class="status">TO BE CONTINUED</span><span>STAY TUNED ✳</span></div></article>
+</div>
+</section>
+<section id="skills" class="reveal">
+<div class="section-head"><div><div class="mono">03 / MY TOOLBOX</div><h2>TOOLS OF<br>THE TRADE.</h2></div><p>Skills I'm practising and technologies I've explored so far. This list grows as I do.</p></div>
+<div class="skills-grid">
+<div class="skill-panel"><h3>Languages & Web</h3><div class="skill-cloud"><span class="skill">Python</span><span class="skill">Java — learning</span><span class="skill">HTML5</span><span class="skill">CSS3</span><span class="skill">JavaScript — basics</span></div><p class="skill-note">Building foundations through coursework, tutorials and hands-on projects.</p></div>
+<div class="skill-panel"><h3>Libraries & Tools</h3><div class="skill-cloud"><span class="skill">Streamlit</span><span class="skill">Pandas</span><span class="skill">spaCy</span><span class="skill">Scikit-learn</span><span class="skill">PyMuPDF</span><span class="skill">NetworkX</span><span class="skill">PyVis</span><span class="skill">GitHub</span><span class="skill">VS Code</span></div><p class="skill-note">Exploring data, NLP workflows, graph visualisation and developer tools.</p></div>
+</div>
+</section>
+<section id="journey" class="reveal">
+<div class="section-head"><div><div class="mono">04 / THE PROCESS</div><h2>IN MY<br>LEARNING LOG.</h2></div><p>Not a finished story — just a snapshot of what I'm working towards.</p></div>
+<div class="timeline">
+<article class="timeline-card"><div class="year">CHAPTER 01 / FOUNDATIONS</div><h3>Learning the basics</h3><p>Strengthening programming fundamentals and getting comfortable with Python, Java and web development.</p></article>
+<article class="timeline-card"><div class="year">CHAPTER 02 / BUILD MODE</div><h3>Learning by making</h3><p>Working on student-focused analytics and exploring how AI and NLP can turn unstructured information into useful visuals.</p></article>
+<article class="timeline-card"><div class="year">CHAPTER 03 / NEXT</div><h3>More building. More learning.</h3><p>Growing my problem-solving skills, improving project quality and learning to explain the work behind the interface.</p></article>
+</div>
+</section>
+<section id="contact" class="contact reveal">
+<div class="contact-box"><div class="mono">05 / OPEN TAB — COLLABORATIONS & CONVERSATIONS</div><h2>GOT AN<br>IDEA? <span style="color:var(--purple)">LET'S</span><br>BUILD.</h2><p>I'm always interested in learning, collaborating on beginner-friendly projects and connecting with people who love creating things.</p><div class="contact-links"><a class="btn primary" href="https://github.com/snehamarker" target="_blank" rel="noreferrer">FIND ME ON GITHUB ↗</a><a class="btn" href="#work">BACK TO PROJECTS ↑</a></div></div>
+</section>
+<footer class="footer"><span>© <span id="year"></span> SNEHA / MADE WITH CURIOSITY</span><span>DESIGNED TO KEEP EVOLVING ✳</span><a href="#">BACK TO TOP ↑</a></footer>
+</div>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const glow=document.getElementById('glow');
+if(window.matchMedia('(pointer:fine)').matches){window.addEventListener('pointermove',e=>{glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px'})}
+</script>
+</body>
+</html>
